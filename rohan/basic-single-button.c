@@ -35,13 +35,13 @@ task main()
 	{
 		if (getJoystickValue(ChD) > threshold)
 		{
-					setMotorSpeed(rightMotor, 100);
-					setMotorSpeed(leftMotor, 100);
+					setMotorSpeed(rightMotor, 127);
+					setMotorSpeed(leftMotor, 127);
 		}
 		else if (getJoystickValue(ChD) < -threshold)
 		{
-					setMotorSpeed(rightMotor, -100);
-					setMotorSpeed(leftMotor, -100);
+					setMotorSpeed(rightMotor, -127);
+					setMotorSpeed(leftMotor, -127);
 		}
 		else  //If less than the threshold, we'll set the motor to zero.
 		{
@@ -51,16 +51,17 @@ task main()
 	}
   else
   {
-	if (getJoystickValue(ChD) < threshold && getJoystickValue(ChD) > -threshold) {
+	if (getJoystickValue(ChD) < threshold && getJoystickValue(ChD) > -threshold)
+	{
   	if (getJoystickValue(ChC) > threshold)
 		{
-					setMotorSpeed(rightMotor, -100);
-					setMotorSpeed(leftMotor, 100);
+					setMotorSpeed(rightMotor, -50);
+					setMotorSpeed(leftMotor, 50);
 		}
 		else if (getJoystickValue(ChC) < -threshold)
 		{
-					setMotorSpeed(rightMotor, 100);
-					setMotorSpeed(leftMotor, -100);
+					setMotorSpeed(rightMotor, 50);
+					setMotorSpeed(leftMotor, -50);
 		}
 		else  //If less than the threshold, we'll set the motor to zero.
 		{
@@ -130,11 +131,11 @@ task main()
 
 		//If Button "R-Up" or "R-Down" is pressed, we'll open the claw
 		if (getJoystickValue(BtnRUp) == 1) {
-			setMotorSpeed(leftLiftMotor, 10);
-			setMotorSpeed(rightLiftMotor, 10);
+			setMotorSpeed(leftLiftMotor, -50);
+			setMotorSpeed(rightLiftMotor, -50);
 		} else if (getJoystickValue(BtnRDown) == 1) {
-			setMotorSpeed(leftLiftMotor, -10);
-			setMotorSpeed(rightLiftMotor, -10);
+			setMotorSpeed(leftLiftMotor, 50);
+			setMotorSpeed(rightLiftMotor, 50);
 		}
 		else	//If neither button is pressed, we'll set the motor off.
 		{
