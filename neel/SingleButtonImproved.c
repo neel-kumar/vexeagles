@@ -18,6 +18,9 @@ while(true) {
 	if((a > thresh || a < -thresh) & (b > thresh || b < -thresh)) {
 		setMotorSpeed(leftMotor, a);
 		setMotorSpeed(rightMotor, b);
+	} else {
+		setMotorSpeed(leftMotor, 0);
+		setMotorSpeed(rightMotor, 0);
 	}
 
 		//If Button "L-Up" or "L-Down"is pressed, we'll close the claw
