@@ -49,9 +49,12 @@ task main()
 	setMotorSpeed(leftMotor, 0);
 	setMotorSpeed(rightMotor, 0);
 
+	// Pause to ensure the cube is on the tower
+	sleep(500);
+
 	// Move the claw down
 	setMotorSpeed(leftLiftMotor, 100);
-	sleep(650);
+	sleep(500);
 	setMotorSpeed(leftLiftMotor, 0);
 
 	// Move backward now
