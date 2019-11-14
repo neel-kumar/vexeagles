@@ -6,6 +6,7 @@
 
 task main()
 {
+	sleep(200);
 
   // nudge
 	setMotorSpeed(leftMotor, 100);
@@ -61,22 +62,6 @@ task main()
 	setMotorSpeed(rightMotor, 0);
 
 	// End of program
-	sleep(2000);
+	// sleep(2000);
 
-	/*
-	setMotorSpeed(leftMotor, 0);
-	setMotorSpeed(leftMotor, -100);
-	wait(250);
-	setMotorSpeed(leftMotor, 0);
-
-// nudge
-	setMotorSpeed(leftMotor, 100);
-	setMotorSpeed(rightMotor, 100);
-	setMotorSpeed(leftLiftMotor, 50);
-	wait(1000);
-	setMotorSpeed(leftMotor, 0);
-	setMotorSpeed(rightMotor, 0);
-	setMotorSpeed(leftLiftMotor, 0);
-	*/
-//
 }
