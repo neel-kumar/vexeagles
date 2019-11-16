@@ -15,13 +15,13 @@ task main()
 
 	// Move back to straighten the robot
 	setMotorSpeed(leftMotor, -100);
-	sleep(300);
+	sleep(350);
 	setMotorSpeed(leftMotor, 0);
 
 	// Move forward to position the claw close to the cube
-	setMotorSpeed(leftMotor, 100);
-	setMotorSpeed(rightMotor, 100);
-	sleep(350);
+	setMotorSpeed(leftMotor, 50);
+	setMotorSpeed(rightMotor, 50);
+	sleep(600);
 	setMotorSpeed(leftMotor, 0);
 	setMotorSpeed(rightMotor, 0);
 
@@ -39,7 +39,7 @@ task main()
 
 	// Move back to face the first tower
 	setMotorSpeed(leftMotor, -100);
-	sleep(300);
+	sleep(275);
 	setMotorSpeed(leftMotor, 0);
 
 	// Move forward closer to the first tower
@@ -53,8 +53,8 @@ task main()
 	sleep(500);
 
 	// Move the claw down
-	setMotorSpeed(leftLiftMotor, 100);
-	sleep(550);
+	setMotorSpeed(leftLiftMotor, 50);
+	sleep(700);
 	setMotorSpeed(leftLiftMotor, 0);
 
 	// Pause to ensure the cube is stable
