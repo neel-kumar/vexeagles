@@ -53,10 +53,10 @@ while(true) {
 
 		//If Button "R-Up" or "R-Down" is pressed, we'll open the claw
 		if (getJoystickValue(BtnRUp) == 1) {
-			setMotorSpeed(leftLiftMotor, -50);
+			setMotorSpeed(leftLiftMotor, -60);
 	//		setMotorSpeed(rightLiftMotor, -50);
 		} else if (getJoystickValue(BtnRDown) == 1) {
-			setMotorSpeed(leftLiftMotor, 50);
+			setMotorSpeed(leftLiftMotor, 40);
 	//		setMotorSpeed(rightLiftMotor, 50);
 		}
 		else	//If neither button is pressed, we'll set the motor off.
